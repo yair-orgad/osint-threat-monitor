@@ -1,0 +1,23 @@
+@keyframes needleGlow {
+  0%, 100% { box-shadow: 0 0 0 rgba(239, 68, 68, 0.0); }
+  50% { box-shadow: 0 0 14px rgba(239, 68, 68, 0.75); }
+}
+
+.needleCritical {
+  animation: needleGlow 0.9s infinite;
+}
+
+/* הבהוב למסגרת אדומה חמורה */
+@keyframes alertPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.8); }
+  50% { box-shadow: 0 0 0 8px rgba(239, 68, 68, 0.0); }
+}
+
+.blink {
+  animation: alertPulse 1s infinite;
+}
+
+/* אנימציה חלקה למחוג */
+#needle {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
